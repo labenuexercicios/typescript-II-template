@@ -9,3 +9,39 @@ que todos os objetos tenham as mesmas propriedades.
 
 3. Modifique o type Pessoa para que possamos escolher apenas entre as cores do arco-íris. Utilize um enum para isso.
 */
+
+//1.
+type Person = {
+  nome: string
+  idade: number
+  corFavorita: Colour
+}
+
+enum Colour {
+  CORUM = 'Vermelho',
+  CORDOIS = 'Laranja',
+  CORTRES = 'Amarelo',
+  CORQUATRO = 'Verde',
+  CORCINCO = 'Azul',
+  CORSEIS = 'Anil',
+  CORSETE = 'Violeta',
+}
+
+//2.
+const pessonOne : Person = {
+  nome: 'Juliano',
+  idade: 34,
+  corFavorita: Colour.CORUM,
+}
+
+const personTwo : Person = {
+  nome: 'Dimitri',
+  idade: 15,
+  corFavorita: Colour.CORSETE
+}
+
+const personThree : Person = {
+  nome: 'Douglas',
+  idade: 27,
+  corFavorita: Colour.CORQUATRO
+}
