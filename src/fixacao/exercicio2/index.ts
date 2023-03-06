@@ -10,8 +10,12 @@ Tendo isso em mente, faça o que se pede:
   a. Quais são as entradas e saídas dessa função? 
   b. Faça a tipagem da função.
 */
+type TPosts = {
+  autor: string
+  texto: string
+}
 
-const posts = [
+const posts: TPosts[] = [
   {
     autor: 'Alvo Dumbledore',
     texto: 'Não vale a pena viver sonhando e se esquecer de viver'
@@ -34,7 +38,7 @@ const posts = [
   }
 ]
 
-function buscarPostsPorAutor(posts, autorInformado) {
+function buscarPostsPorAutor(posts: TPosts[], autorInformado: string) {
   return posts.filter(
     (post) => {
       return post.autor === autorInformado
