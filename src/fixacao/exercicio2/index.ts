@@ -34,6 +34,8 @@ const posts = [
   }
 ]
 
+
+/*
 function buscarPostsPorAutor(posts, autorInformado) {
   return posts.filter(
     (post) => {
@@ -41,3 +43,4 @@ function buscarPostsPorAutor(posts, autorInformado) {
     }
   )
 }
+*/
